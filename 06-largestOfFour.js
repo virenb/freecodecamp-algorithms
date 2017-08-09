@@ -9,8 +9,11 @@ Comparison Operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 */
 
 function largestOfFour(arr) {
-  // You can do this!
-  return arr;
+	return arr.map(newArr => {
+		return newArr.reduce((previous, current) => {
+			return (current > previous) ? current : previous;
+		})
+	})
 }
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);

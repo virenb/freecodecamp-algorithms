@@ -8,18 +8,25 @@ Here are some helpful links:
 Global String Object https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 */
 
-function confirmEnding(str, target) {
-  return str.substr(str.length - target.length) === target;
+function repeatStringNumTimes(str, num) {
+  if (num <= 0 ) {
+    return '';
+  }
+  if (num === 1) {
+    return str;
+  }
+  else {
+    return str + repeatStringNumTimes(str, num - 1);
+  }
 }
 
-confirmEnding("Bastian", "n");
+repeatStringNumTimes("abc", 3);
 
 /* Test Cases
-confirmEnding("Connor", "n") should return false.
-confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification") should return false.
-confirmEnding("He has to give me a new name", "name") should return true.
-confirmEnding("Open sesame", "same") should return true.
-confirmEnding("Open sesame", "pen") should return false.
-confirmEnding("If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain") should return false.
-Do not use the built-in method .endsWith() to solve the challenge.
+repeatStringNumTimes("*", 3) should return "***".
+repeatStringNumTimes("abc", 3) should return "abcabcabc".
+repeatStringNumTimes("abc", 4) should return "abcabcabcabc".
+repeatStringNumTimes("abc", 1) should return "abc".
+repeatStringNumTimes("*", 8) should return "********".
+repeatStringNumTimes("abc", -2) should return "".
 */
