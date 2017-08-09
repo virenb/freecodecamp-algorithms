@@ -10,10 +10,10 @@ String.length https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 */
 
 function findLongestWord(str) {
-  var strSortedArr = str.split(' ').sort(function(a,b) {
+  var strSortedArr = str.split(' ').sort(function(a,b) { // splits string into array, sort words from smallest to larges
     return a.length - b.length;
   });
-  return strSortedArr[strSortedArr.length - 1].length;
+  return strSortedArr[strSortedArr.length - 1].length; // retrieve length last index of array, which would be longest word, since we sorted
 }
 
 findLongestWord("The quick brown fox jumped over the lazy dog");
