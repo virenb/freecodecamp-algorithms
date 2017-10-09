@@ -1,4 +1,4 @@
-/* Validate US Telephone Numbers - Intermediate Algorithm Scripting - freeCodeCamp
+/* Validate US Telephone Numbers - Advanced Algorithm Scripting - freeCodeCamp
 
 Instructions
 -----

@@ -1,4 +1,4 @@
-/* Symmetric Difference - Intermediate Algorithm Scripting - freeCodeCamp
+/* Symmetric Difference - Advanced Algorithm Scripting - freeCodeCamp
 
 Instructions
 -----

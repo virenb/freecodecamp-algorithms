@@ -1,4 +1,4 @@
-/* Record Collection - Intermediate Algorithm Scripting - freeCodeCamp
+/* Record Collection - Advanced Algorithm Scripting - freeCodeCamp
 
 Instructions
 -----
